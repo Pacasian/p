@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context="com.example.sunith.pacy.MainActivity">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="198dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/rre"
+        android:background="@drawable/imageslider">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="189dp"
+        android:layout_alignParentTop="true"
+        />
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="148dp"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+        </RelativeLayout>
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:columnWidth="10dp"
+        android:id="@+id/gride"
+        android:gravity="bottom"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_below="@+id/rre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentBottom="true"></GridView>
+
+</RelativeLayout>
